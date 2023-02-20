@@ -1,1 +1,1 @@
-pip install --target=./lib iterm2
+pip3 install --target=lib iterm2
