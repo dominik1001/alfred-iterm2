@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from lib import iterm2
-# To install, update, or remove packages from PyPI, use Scripts > Manage > Manage Dependencies...
+
 
 async def main(connection):
     # Your code goes here. Here's a bit of example code that adds a tab to the current window:
@@ -14,5 +14,6 @@ async def main(connection):
 
     names = [o.name for o in sessions]
     print("\n".join(names))
+
 
 iterm2.run_until_complete(main)
