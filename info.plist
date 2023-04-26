@@ -7,7 +7,18 @@
 	<key>connections</key>
 	<dict>
 		<key>018D7E2A-AF41-48AD-ADAE-9FD145613D2F</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7D2BC4F9-7BC7-4B3A-A6EC-3FB08D12CB70</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string></string>
@@ -19,6 +30,31 @@
 	<string>iTerm2</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$1
+
+echo -n $query</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7D2BC4F9-7BC7-4B3A-A6EC-3FB08D12CB70</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -77,6 +113,13 @@
 		<dict>
 			<key>xpos</key>
 			<real>115</real>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+		<key>7D2BC4F9-7BC7-4B3A-A6EC-3FB08D12CB70</key>
+		<dict>
+			<key>xpos</key>
+			<real>415</real>
 			<key>ypos</key>
 			<real>90</real>
 		</dict>
