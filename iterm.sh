@@ -7,7 +7,7 @@ set -Eeuo pipefail
 query="$1"
 
 cd $HOME/Library/ApplicationSupport/iTerm2/Scripts/alfred2/alfred2/
-x=$(python3 alfred2.py | grep -i "$query")
+x=$(python3 get_tabs.py | grep -i "$query")
 
 items=""
 while IFS= read -r app; do
