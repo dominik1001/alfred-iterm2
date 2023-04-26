@@ -8,7 +8,6 @@ from lib import iterm2
 
 
 async def main(connection):
-    # Your code goes here. Here's a bit of example code that adds a tab to the current window:
     app = await iterm2.async_get_app(connection)
     sessions = []
     for window in app.terminal_windows:
