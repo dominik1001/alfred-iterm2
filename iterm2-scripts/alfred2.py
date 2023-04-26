@@ -7,7 +7,7 @@
 from lib import iterm2
 
 
-async def main(connection):
+async def get_tabs(connection):
     app = await iterm2.async_get_app(connection)
     sessions = []
     for window in app.terminal_windows:
@@ -19,4 +19,4 @@ async def main(connection):
     print("\n".join(names))
 
 
-iterm2.run_until_complete(main)
+iterm2.run_until_complete(get_tabs)
