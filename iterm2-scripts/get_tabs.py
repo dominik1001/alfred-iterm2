@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-# import sys
-# sys.stderr.write("Log this to the console")
-# sys.stderr.write("User Current Version:-" + sys.version)
-
 from lib import iterm2
 
 
