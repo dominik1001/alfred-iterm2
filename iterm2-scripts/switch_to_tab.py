@@ -12,15 +12,13 @@ tab_name = str(sys.argv[1])
 async def switch_to_tab(connection):
     app = await iterm2.async_get_app(connection)
 
-    # Foreground the app
-    await app.async_activate()
-
     for window in app.terminal_windows:
         for tab in window.tabs:
             for session in tab.sessions:
-                if session.name == tab_name:
+                if session.name.replace('\\', '') == tab_name:
                     sys.stderr.write('SUCCESS')
+                    await app.async_activate()
                     await session.async_activate()
-
+                    break
 
 iterm2.run_until_complete(switch_to_tab)
