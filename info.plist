@@ -40,7 +40,7 @@
 				<key>script</key>
 				<string>query=$1
 
-echo -n $query</string>
+./switch_to_tab.sh "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
