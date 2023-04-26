@@ -3,7 +3,12 @@
 It searches, lists, and switches focus to all open session.
 
 ## Installation
-tbd
+
+Run
+
+```
+install.sh
+```
 
 ## Contribute
 tbd
