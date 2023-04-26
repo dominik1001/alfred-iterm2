@@ -83,7 +83,7 @@ echo -n $query</string>
 				<key>runningsubtext</key>
 				<string>Fetching results</string>
 				<key>script</key>
-				<string>./iterm.sh "{query}" </string>
+				<string>./get_tabs.sh "{query}" </string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
