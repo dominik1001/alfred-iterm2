@@ -6,7 +6,8 @@ import sys
 
 from lib import iterm2
 
-sys.stderr.write(str(sys.argv))
+tab_name = str(sys.argv[1])
+
 
 async def switch_to_tab(connection):
     app = await iterm2.async_get_app(connection)
@@ -17,6 +18,9 @@ async def switch_to_tab(connection):
     for window in app.terminal_windows:
         for tab in window.tabs:
             for session in tab.sessions:
-                sys.stderr.write(session.name)
+                if session.name == tab_name:
+                    sys.stderr.write('SUCCESS')
+                    await session.async_activate()
+
 
 iterm2.run_until_complete(switch_to_tab)

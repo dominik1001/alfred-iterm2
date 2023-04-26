@@ -38,9 +38,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-./switch_to_tab.sh "{query}"</string>
+				<string>./switch_to_tab.sh $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
